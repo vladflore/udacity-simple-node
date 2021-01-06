@@ -1,6 +1,10 @@
 # Use NodeJS base image
 FROM node:13
 
+ARG FAVORITE_INSTRUCTOR
+
+ENV FAVORITE_INSTRUCTOR ${FAVORITE_INSTRUCTOR}
+
 # Create app directory
 WORKDIR /usr/src/app
 
